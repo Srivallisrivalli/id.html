@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;background-color: aliceblue;
+
+        }
+          .card{
+            background-color: aliceblue;
+            padding: 40px;
+            border-radius: 20px; 
+        } 
+         .id{
+            width: 600px;
+            background: white;
+             border: 2px solid black; 
+            border-radius: 15px; 
+
+            
+
+        }
+        .logo{
+            
+            font-weight: bold;
+        }
+        
+        .abc{
+             height: 70px; 
+              background-color: aqua; 
+             display: flex;
+              align-items: center;
+              gap: 20px;
+             padding: 0 30px;  
+        }
+        .abc h2{
+            width: 500px;
+             text-align: center; 
+             
+        }
+        .content{
+            display: flex;
+            padding: 25px;
+            gap: 50px;
+        }
+        .photo{
+            width: 150px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .details input{
+            width: 250px;
+            border: none;
+            border-bottom: 1px solid black; 
+            padding: 5px;
+          
+        }
+        .signature{
+            text-align: right;
+            
+        }
+       
+       
+         
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="id">
+            <div class="abc">
+                <div class="logo">logo</div>
+                   <h2>oppty</h2>
+
+                
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="https://t4.ftcdn.net/jpg/00/35/30/85/360_F_35308534_WGRVXlymcjQqoRXzeWEfVCOfBHBq9YdW.jpg"width="150px",height="200px">
+                </div>
+                <div class="details">
+                    <label>ID</label>
+                    <input type="text"><br>
+                    <label>name</label>
+                    <input type="text"><br>
+                    
+                    <label>address</label>
+                    <input type="text"><br>
+                     <label>D.O.B</label>
+                    <input type="text"><br>
+                    <label>phone</label>
+                    <input type="text"><br>
+                    <label>company</label>
+                    <input type="text"><br>
+                    <div class="barcode">
+                        <img src="data:image/png;base64,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" width="100px",height="300px">
+                    </div>
+                    
+                    
+                    <div class="signature"></div>
+                    <label>principal</label>
+                    <input type="text"><br>
+                    
+
+                </div>
+
+            </div>
+
+                
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
